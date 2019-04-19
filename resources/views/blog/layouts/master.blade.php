@@ -8,6 +8,8 @@
     <meta name="author" content="{{ config('blog.author') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ $title ?? config('blog.title') }}</title>
+    <link rel="alternate" type="application/rss+xml" href="{{ url('rss') }}"
+          title="RSS Feed {{ config('blog.title') }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('storage/icon.ico') }}"/>
 
     {{-- Styles --}}

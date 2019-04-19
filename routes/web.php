@@ -18,6 +18,7 @@ Route::get('/blog/{slug}', 'BlogController@showPost')->name('blog.detail');
 Route::get('/contact', 'ContactController@showForm');
 Route::post('/contact', 'ContactController@sendContactInfo');
 Route::get('/sitemap.xml', 'BlogController@siteMap');
+Route::get('/rss', 'BlogController@rss');
 
 // 后台路由
 Route::get('/admin', function () {
