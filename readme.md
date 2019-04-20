@@ -28,23 +28,23 @@ cp .env.example .env
 ```$xslt
 ...
 
-DB_CONNECTION=mysql             //数据库的连接类型
-DB_HOST=127.0.0.1               //数据库的连接地址
-DB_PORT=3306                    //数据库的连接端口
-DB_DATABASE=homestead           //数据库的库名
-DB_USERNAME=homestead           //数据库的用户名
-DB_PASSWORD=secret              //数据库的密码
+DB_CONNECTION=mysql             # 数据库的连接类型
+DB_HOST=127.0.0.1               # 数据库的连接地址
+DB_PORT=3306                    # 数据库的连接端口
+DB_DATABASE=homestead           # 数据库的库名
+DB_USERNAME=homestead           # 数据库的用户名
+DB_PASSWORD=secret              # 数据库的密码
 
 ...
 
-MAIL_DRIVER=smtp                //邮箱通讯协议
-MAIL_HOST=smtp.mailtrap.io      //邮箱服务器
-MAIL_PORT=2525                  //连接服务的端口
-MAIL_USERNAME=null              //连接服务器所用邮箱
-MAIL_PASSWORD=null              //你邮箱的授权码
-MAIL_FROM_ADDRESS=YOUR_EMAIL    //发邮件的邮箱
-MAIL_FROM_NAME=YOUR_NAME        //邮件发件人
-MAIL_ENCRYPTION=SSL             //加密技术
+MAIL_DRIVER=smtp                # 邮箱通讯协议
+MAIL_HOST=smtp.mailtrap.io      # 邮箱服务器
+MAIL_PORT=2525                  # 连接服务的端口
+MAIL_USERNAME=null              # 连接服务器所用邮箱
+MAIL_PASSWORD=null              # 你邮箱的授权码
+MAIL_FROM_ADDRESS=YOUR_EMAIL    # 发邮件的邮箱
+MAIL_FROM_NAME=YOUR_NAME        # 邮件发件人
+MAIL_ENCRYPTION=SSL             # 加密技术
 
 ...
 ```
