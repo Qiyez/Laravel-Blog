@@ -27,7 +27,9 @@ class BlogController extends Controller
         if ($tag) {
             $tag = Tag::where('tag', $tag)->firstOrFail();
         }
-        return view($post->layout, compact('post', 'tag'));
+        $comments = $post->comments;
+
+        return view($post->layout, compact('post', 'tag', 'comments'));
     }
 
     // 生成站点地图以利于SEO

@@ -27,7 +27,6 @@
 @stop
 
 @section('content')
-
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
@@ -36,7 +35,7 @@
                     {!! $post->content_html !!}
                 </article>
 
-                <hr>
+                <hr style="margin-top: 4rem;">
 
                 {{-- 上一篇、下一篇导航 --}}
                 <div class="clearfix">
@@ -69,6 +68,19 @@
                         @endif
                     @endif
                 </div>
+            </div>
+        </div>
+    </div>
+@stop
+
+@section('comment')
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <hr style="margin-bottom: 4rem;">
+                @include('admin.partials.errors')
+                @include('admin.partials.success')
+                @include('blog.partials.page-comment')
             </div>
         </div>
     </div>

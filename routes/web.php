@@ -11,6 +11,9 @@
 |
 */
 
+// 测试
+Route::get('/test', 'TestController@test');
+
 // 前台路由
 Route::get('/', function () { return redirect('/blog'); });
 Route::get('/blog', 'BlogController@index')->name('blog.home');

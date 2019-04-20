@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Requests\PostCreateRequest;
 use App\Http\Requests\PostUpdateRequest;
-use App\Jobs\PostFormFields;
 use App\Models\Post;
 use App\Models\Tag;
 use Carbon\Carbon;
