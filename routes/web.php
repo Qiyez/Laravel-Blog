@@ -20,6 +20,7 @@ Route::get('/blog', 'BlogController@index')->name('blog.home');
 Route::get('/blog/{slug}', 'BlogController@showPost')->name('blog.detail');
 Route::get('/contact', 'ContactController@showForm');
 Route::post('/contact', 'ContactController@sendContactInfo');
+Route::post('/comment', 'CommentController@create');
 Route::get('/sitemap.xml', 'BlogController@siteMap');
 Route::get('/rss', 'BlogController@rss');
 
