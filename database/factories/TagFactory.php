@@ -9,7 +9,7 @@ $factory->define(Tag::class, function (Faker $faker) {
         'tag' => $word,
         'title' => ucfirst($word),
         'subtitle' => $faker->sentence,
-        'page_image' => 'bg'.rand(1,18).'.jpg',
+        'page_image' => 'bg'.rand(1,12).'.jpg',
         'meta_description' => "Meta for $word",
         'reverse_direction' => false,
     ];
