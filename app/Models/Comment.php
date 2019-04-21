@@ -37,8 +37,7 @@ class Comment extends Model
     public function setContentRawAttribute($value)
     {
         $markdown = new Markdowner();
-        $value = clean_xss($value);
-//        $value = clean(Input::get($value));
+        clean(Input::get($value));
 
         $this->attributes['content_raw'] = $value;
         $this->attributes['content_html'] = $markdown->toHTML($value);
