@@ -16,7 +16,7 @@ class RestructurePostsTable extends Migration
         Schema::table('posts', function (Blueprint $table) {
             $table->string('subtitle')->after('title');
             $table->renameColumn('content', 'content_raw');
-            $table->text('content_html')->after('content');
+            $table->mediumText('content_html')->after('content');
             $table->string('page_image')->after('content_html');
             $table->string('meta_description')->after('page_image');
             $table->boolean('is_draft')->after('meta_description');
